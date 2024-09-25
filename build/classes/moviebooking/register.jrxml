@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6f5c5f4a-00e0-4947-b58d-63bc89fd0076">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select *from register]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telephone" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="173" y="0" width="260" height="36" forecolor="#00FFCC" backcolor="#CC3300" uuid="be24cb8d-2cb1-451c-81c8-0349aa614a7c"/>
+				<textElement>
+					<font fontName="Algerian" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Register Table]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="16" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="14" width="100" height="20" uuid="7226fb12-9490-4b19-aaf7-eeab6e0afd27"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="14" width="100" height="20" uuid="479fb337-d86d-4133-801d-18004d674be4"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="14" width="100" height="20" uuid="d31dd607-109b-42be-b178-aff7845f5674"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="14" width="100" height="20" uuid="bb7109ee-8774-4e58-9df7-e45982cd962b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="18" width="100" height="20" uuid="0521b8ed-44b2-47cd-a222-802de0621227"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="18" width="100" height="20" uuid="7dc534de-83ba-4cbc-bc9c-1e6d4aaff2e4"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="18" width="100" height="20" uuid="40a4ef83-3663-4f15-9f61-ed9811281555"/>
+				<textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="18" width="100" height="20" uuid="bdcbbaa0-d951-44e8-acc5-9b1c7c0814de"/>
+				<textFieldExpression><![CDATA[$F{telephone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
