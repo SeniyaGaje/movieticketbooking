@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93db0a4a-3187-49af-8859-0582b692f73a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from movie;]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="movie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="theatre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tickets" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="533" height="41" forecolor="#FF3300" backcolor="#FFEB6E" uuid="3df09dc5-b410-433c-933e-1b3a3418c5d8"/>
+				<textElement>
+					<font fontName="Algerian" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Movie Bookings]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="12" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="17" width="77" height="20" uuid="72661c91-ef49-4000-91ab-067503629b4f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="104" y="17" width="81" height="20" uuid="367a1894-676e-4c8d-ad76-2438696d41af"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[movie]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="17" width="75" height="20" uuid="3f74d6c3-0826-4f60-b0f4-1677c84347b6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[theatre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="17" width="61" height="20" uuid="5222ee5f-03a3-427c-9c4b-81d2154e97b6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tickets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="17" width="40" height="20" uuid="3fe81363-d0a5-420f-b0d8-3f38896a9010"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="17" width="51" height="20" uuid="67df5088-1c12-45bf-a39e-086f3786ed9e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[time]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="11" width="77" height="20" uuid="646fa312-a530-4253-b9fb-7a3208ce7da5"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="11" width="81" height="20" uuid="b4b7194d-2706-4f73-b4e7-a2fc6d5b5a18"/>
+				<textFieldExpression><![CDATA[$F{movie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="11" width="75" height="20" uuid="9545303d-ea93-497b-be2c-553697ddf4fb"/>
+				<textFieldExpression><![CDATA[$F{theatre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="482" y="11" width="61" height="20" uuid="36644a54-f0d0-40c5-9c19-db73e3ecaa5a"/>
+				<textFieldExpression><![CDATA[$F{tickets}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="281" y="11" width="40" height="20" uuid="62230232-0b63-4db5-a4be-3f213465d9e2"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="11" width="40" height="20" uuid="619ff1fd-8330-4855-b63e-404f69012de2"/>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
